@@ -14,7 +14,7 @@ export default function Hero() {
           ratio={16 / 9}
           className='w-full h-full'>
           <video
-            src='/alemanha.mp4'
+            src='/conway.mp4'
             autoPlay
             loop
             muted
