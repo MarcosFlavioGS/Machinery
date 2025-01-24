@@ -29,8 +29,72 @@ export default function LandingPage() {
 
   return (
     <div className='min-h-screen bg-gray-100'>
+      {/* Navbar Section */}
+      <nav className='bg-white shadow-md py-4'>
+        <div className='container mx-auto px-4 flex items-center justify-between'>
+          <div className='flex items-center space-x-10'>
+            <Image
+              src='/logo.svg'
+              alt='Marketplace Logo'
+              width={200}
+              height={200}
+              className='object-contain'
+            />
+            <span className='text-xl font-bold text-gray-800'>Machinery Market</span>
+          </div>
+          <ul className='flex space-x-6 text-gray-800'>
+            <li>
+              <a
+                href='#hero'
+                className='hover:text-blue-600'>
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href='#featured'
+                className='hover:text-blue-600'>
+                Featured Listings
+              </a>
+            </li>
+            <li>
+              <a
+                href='#cta'
+                className='hover:text-blue-600'>
+                Get Started
+              </a>
+            </li>
+            <li>
+              <a
+                href='#footer'
+                className='hover:text-blue-600'>
+                Contact
+              </a>
+            </li>
+          </ul>
+          <form
+            action='/search'
+            method='GET'
+            className='flex items-center space-x-2'>
+            <input
+              type='text'
+              name='query'
+              placeholder='Search machines...'
+              className='px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-200'
+            />
+            <Button
+              type='submit'
+              className='bg-blue-600 text-white px-4 py-2 rounded-lg'>
+              Search
+            </Button>
+          </form>
+        </div>
+      </nav>
+
       {/* Hero Section */}
-      <section className='relative bg-blue-600 text-white py-20 text-center'>
+      <section
+        id='hero'
+        className='relative bg-blue-600 text-white py-20 text-center'>
         <div className='container mx-auto px-4'>
           <h1 className='text-4xl md:text-6xl font-bold mb-4'>Heavy Machinery Marketplace</h1>
           <p className='text-lg md:text-2xl mb-6'>
@@ -53,7 +117,9 @@ export default function LandingPage() {
       </section>
 
       {/* Featured Listings Section */}
-      <section className='py-16'>
+      <section
+        id='featured'
+        className='py-16'>
         <div className='container mx-auto px-4'>
           <h2 className='text-3xl font-bold text-center mb-12'>Featured Listings</h2>
           <div className='relative'>
@@ -102,7 +168,9 @@ export default function LandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className='bg-blue-600 text-white py-12'>
+      <section
+        id='cta'
+        className='bg-blue-600 text-white py-12'>
         <div className='container mx-auto text-center'>
           <h2 className='text-3xl font-bold mb-4'>Ready to List Your Machinery?</h2>
           <p className='mb-6'>Join thousands of professionals buying and selling on our platform.</p>
@@ -114,8 +182,46 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Contact Section */}
+      <section
+        id='contact'
+        className='bg-gray-200 py-16'>
+        <div className='container mx-auto px-4'>
+          <h2 className='text-3xl font-bold text-center mb-8'>Contact Us</h2>
+          <form className='max-w-xl mx-auto space-y-6'>
+            <div>
+              <label className='block text-gray-700 font-bold mb-2'>Name</label>
+              <input
+                type='text'
+                placeholder='Your Name'
+                className='w-full border border-gray-300 rounded px-4 py-2'
+              />
+            </div>
+            <div>
+              <label className='block text-gray-700 font-bold mb-2'>Email</label>
+              <input
+                type='email'
+                placeholder='Your Email'
+                className='w-full border border-gray-300 rounded px-4 py-2'
+              />
+            </div>
+            <div>
+              <label className='block text-gray-700 font-bold mb-2'>Message</label>
+              <textarea
+                placeholder='Your Message'
+                className='w-full border border-gray-300 rounded px-4 py-2'
+                rows={4}
+              />
+            </div>
+            <Button className='w-full bg-blue-600 text-white py-3'>Send Message</Button>
+          </form>
+        </div>
+      </section>
+
       {/* Footer Section */}
-      <footer className='bg-gray-800 text-white py-6'>
+      <footer
+        id='footer'
+        className='bg-gray-800 text-white py-6'>
         <div className='container mx-auto text-center'>
           <p>&copy; {new Date().getFullYear()} Heavy Machinery Marketplace. All rights reserved.</p>
         </div>
