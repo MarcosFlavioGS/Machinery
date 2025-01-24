@@ -14,7 +14,7 @@ export default function Hero() {
           ratio={16 / 9}
           className='w-full h-full'>
           <video
-            src='/conway.mp4'
+            src='https://video-stream-poc-elixir.s3.us-east-2.amazonaws.com/uploads/machinery.mp4'
             autoPlay
             loop
             muted
