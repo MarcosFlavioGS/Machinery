@@ -21,7 +21,11 @@ export default function LandingPage() {
       <Hero />
 
       {/* Featured Listings Section */}
-      <Featured />
+      <Featured listName='Most searched' />
+
+      <Featured listName='Trending' />
+
+      <Featured listName='Picks for you' />
 
       {/* CTA Section */}
       <Cta />

@@ -9,7 +9,11 @@ import {
   CarouselPrevious
 } from '@/components/ui/carousel'
 
-export default function Featured() {
+type Props = {
+  listName: string
+}
+
+export default function Featured(props: Props) {
   const items = [
     { title: 'MARAIS SMC 200 R', price: '$25,000', image: '/MARAIS SMC 200 R.png' },
     { title: 'Bulldozer XT200', price: '$35,000', image: '/bulldozer.png' },
@@ -26,7 +30,7 @@ export default function Featured() {
       id='featured'
       className='py-16 bg-gray-50'>
       <div className='container mx-auto px-4'>
-        <h2 className='text-4xl font-extrabold text-center mb-12 text-gray-800'>Featured Listings</h2>
+        <h2 className='text-4xl font-extrabold text-center mb-12 text-gray-800'>{props.listName}</h2>
         <Carousel
           opts={{ align: 'start' }}
           className='w-full'>
