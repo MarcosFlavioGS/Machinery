@@ -4,7 +4,6 @@ import { Separator } from '@/components/ui/separator'
 
 import NavBar from '@/components/navBar/navBar'
 import Hero from '@/components/hero/hero'
-import Search from '@/components/search/search'
 import Featured from '@/components/featured/featured'
 import Cta from '@/components/cta/cta'
 import Contact from '@/components/contact/contact'

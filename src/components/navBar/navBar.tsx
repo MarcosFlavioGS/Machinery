@@ -4,7 +4,6 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import Search from '@/components/search/search'
-import { cn } from '@/lib/utils' // Utility function for conditional classes, like clsx.
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -41,7 +40,7 @@ export default function NavBar() {
         </div>
 
         {/* Desktop Menu */}
-        <ul className='hidden sm:flex items-center space-x-6 text-gray-800 font-medium'>
+        <ul className='hidden sm:flex items-center space-x-4 text-gray-800 font-medium'>
           {menuItems.map((item) => (
             <li key={item.label}>
               <a
@@ -104,7 +103,7 @@ export default function NavBar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <ul className='sm:hidden flex flex-col space-y-4 mt-2 bg-white shadow-md py-4 px-6 text-gray-800 font-medium'>
+        <ul className='sm:hidden flex flex-col space-y-2 mt-2 bg-white shadow-md py-4 px-6 text-gray-800 font-medium'>
           {menuItems.map((item) => (
             <li key={item.label}>
               <a
