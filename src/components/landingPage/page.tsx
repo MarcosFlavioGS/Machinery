@@ -21,9 +21,6 @@ export default function LandingPage() {
       {/* Hero Section */}
       <Hero />
 
-      {/* Search bar */}
-      <Search />
-
       {/* Featured Listings Section */}
       <Featured />
 
