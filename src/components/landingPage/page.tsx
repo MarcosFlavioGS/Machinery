@@ -32,17 +32,17 @@ export default function LandingPage() {
       {/* Navbar Section */}
       <nav className='bg-white shadow-md py-4'>
         <div className='container mx-auto px-4 flex items-center justify-between'>
-          <div className='flex items-center space-x-10'>
+          <div className='flex items-center space-x-4 sm:space-x-10'>
             <Image
               src='/logo.svg'
               alt='Marketplace Logo'
-              width={200}
-              height={200}
+              width={150}
+              height={150}
               className='object-contain'
             />
             <span className='text-xl font-bold text-gray-800'>Machinery Market</span>
           </div>
-          <ul className='flex space-x-6 text-gray-800'>
+          <ul className='hidden sm:flex space-x-6 text-gray-800'>
             <li>
               <a
                 href='#hero'
@@ -80,7 +80,7 @@ export default function LandingPage() {
               type='text'
               name='query'
               placeholder='Search machines...'
-              className='px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-200'
+              className='px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-200 w-32 sm:w-auto'
             />
             <Button
               type='submit'
@@ -96,8 +96,8 @@ export default function LandingPage() {
         id='hero'
         className='relative bg-blue-600 text-white py-20 text-center'>
         <div className='container mx-auto px-4'>
-          <h1 className='text-4xl md:text-6xl font-bold mb-4'>Heavy Machinery Marketplace</h1>
-          <p className='text-lg md:text-2xl mb-6'>
+          <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold mb-4'>Heavy Machinery Marketplace</h1>
+          <p className='text-lg sm:text-xl md:text-2xl mb-6'>
             The ultimate platform to buy, sell, and lease industrial equipment.
           </p>
           <Button
@@ -107,7 +107,7 @@ export default function LandingPage() {
           </Button>
         </div>
         <Image
-          src='/images/hero-machinery.jpg'
+          src='/images/logo.svg'
           alt='Heavy Machinery'
           layout='fill'
           objectFit='cover'
@@ -128,16 +128,14 @@ export default function LandingPage() {
               className='absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full z-10'>
               ←
             </button>
-            <div
-              className='overflow-hidden'
-              style={{ scrollBehavior: 'smooth' }}>
+            <div className='overflow-auto'>
               <div
                 className='flex gap-8'
                 style={{ transform: `translateX(-${scrollPosition}px)` }}>
                 {items.map((item, idx) => (
                   <Card
                     key={idx}
-                    className='shadow-md w-72'>
+                    className='shadow-md w-72 sm:w-80 md:w-96'>
                     <CardHeader>
                       <Image
                         src={item.image}
@@ -172,7 +170,7 @@ export default function LandingPage() {
         id='cta'
         className='bg-blue-600 text-white py-12'>
         <div className='container mx-auto text-center'>
-          <h2 className='text-3xl font-bold mb-4'>Ready to List Your Machinery?</h2>
+          <h2 className='text-3xl sm:text-4xl font-bold mb-4'>Ready to List Your Machinery?</h2>
           <p className='mb-6'>Join thousands of professionals buying and selling on our platform.</p>
           <Button
             variant='outline'
@@ -194,7 +192,7 @@ export default function LandingPage() {
               <input
                 type='text'
                 placeholder='Your Name'
-                className='w-full border border-gray-300 rounded px-4 py-2'
+                className='w-full border border-gray-300 rounded px-4 py-2 text-sm sm:text-base'
               />
             </div>
             <div>
@@ -202,14 +200,14 @@ export default function LandingPage() {
               <input
                 type='email'
                 placeholder='Your Email'
-                className='w-full border border-gray-300 rounded px-4 py-2'
+                className='w-full border border-gray-300 rounded px-4 py-2 text-sm sm:text-base'
               />
             </div>
             <div>
               <label className='block text-gray-700 font-bold mb-2'>Message</label>
               <textarea
                 placeholder='Your Message'
-                className='w-full border border-gray-300 rounded px-4 py-2'
+                className='w-full border border-gray-300 rounded px-4 py-2 text-sm sm:text-base'
                 rows={4}
               />
             </div>
@@ -223,7 +221,9 @@ export default function LandingPage() {
         id='footer'
         className='bg-gray-800 text-white py-6'>
         <div className='container mx-auto text-center'>
-          <p>&copy; {new Date().getFullYear()} Heavy Machinery Marketplace. All rights reserved.</p>
+          <p className='text-sm sm:text-base'>
+            &copy; {new Date().getFullYear()} Heavy Machinery Marketplace. All rights reserved.
+          </p>
         </div>
       </footer>
     </div>
