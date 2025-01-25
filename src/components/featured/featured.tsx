@@ -15,14 +15,62 @@ type Props = {
 
 export default function Featured(props: Props) {
   const items = [
-    { title: 'MARAIS SMC 200 R', price: '$25,000', image: '/MARAIS SMC 200 R.png' },
-    { title: 'Bulldozer XT200', price: '$35,000', image: '/bulldozer.png' },
-    { title: 'Komatsu PC210-LC', price: '$50,000', image: '/Komatsu PC210-LC.png' },
-    { title: 'Loader Pro XL', price: '$40,000', image: '/bulldozer.png' },
-    { title: 'DrillMaster 500', price: '$60,000', image: '/bulldozer.png' },
-    { title: 'Loader Pro XL', price: '$40,000', image: '/bulldozer.png' },
-    { title: 'DrillMaster 500', price: '$40,000', image: '/bulldozer.png' },
-    { title: 'Komatsu PC210-LC', price: '$40,000', image: '/MARAIS SMC 200 R.png' }
+    {
+      title: 'MARAIS SMC 200 R',
+      price: 'R$25,000',
+      image: '/MARAIS SMC 200 R.png',
+      vendor: 'Cleiton',
+      local: '📍 São Paulo, SP'
+    },
+    {
+      title: 'Bulldozer XT200',
+      price: 'R$35,000',
+      image: '/bulldozer.png',
+      vendor: 'Mohamed',
+      local: '📍 São Paulo, SP'
+    },
+    {
+      title: 'Komatsu PC210-LC',
+      price: 'R$50,000',
+      image: '/Komatsu PC210-LC.png',
+      vendor: 'Brunno',
+      local: '📍 São Paulo, SP'
+    },
+    {
+      title: 'Loader Pro XL',
+      price: 'R$40,000',
+      image: '/bulldozer.png',
+      vendor: 'Matheus',
+      local: '📍 São Paulo, SP'
+    },
+    {
+      title: 'DrillMaster 500',
+      price: 'R$60,000',
+      image: '/bulldozer.png',
+      vendor: 'Luiz',
+      local: '📍 São Paulo, SP'
+    },
+    {
+      title: 'Loader Pro XL',
+      price: 'R$40,000',
+      image: '/bulldozer.png',
+      vendor: 'Marcos',
+      local: '📍 São Paulo, SP'
+    },
+    {
+      title: 'DrillMaster 500',
+      price: 'R$40,000',
+      image: '/bulldozer.png',
+      vendor: 'Celso',
+      local: '📍 São Paulo, SP'
+    },
+    {
+      title: 'Komatsu PC210-LC',
+      price: 'R$40,000',
+      image: '/MARAIS SMC 200 R.png',
+      vendor: 'Carlos',
+      local: '📍 São Paulo, SP'
+    }
   ]
 
   return (
@@ -52,6 +100,8 @@ export default function Featured(props: Props) {
                   <CardContent className='p-6'>
                     <CardTitle className='text-xl font-bold text-gray-800'>{item.title}</CardTitle>
                     <p className='text-lg font-semibold text-blue-600'>{item.price}</p>
+                    <p className='text-lg font-semibold text-blue-600'>{'De: ' + item.vendor}</p>
+                    <p className='text-lg font-semibold text-blue-600'>{item.local}</p>
                   </CardContent>
                   <CardFooter className='p-6'>
                     <Button className='w-full bg-blue-600 text-white hover:bg-blue-700'>View Details</Button>
