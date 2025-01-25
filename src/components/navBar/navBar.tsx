@@ -28,9 +28,9 @@ export default function NavBar() {
           <Image
             src='/logo.svg'
             alt='Marketplace Logo'
-            width={400}
-            height={200}
-            className='object-contain'
+            width={150}
+            height={75}
+            className='object-contain sm:w-24 sm:h-12'
           />
         </div>
 
@@ -103,7 +103,7 @@ export default function NavBar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <ul className='lg:hidden flex flex-col space-y-2 mt-2 bg-blue-600 shadow-md py-4 px-6 text-white font-bold'>
+        <ul className='lg:hidden flex flex-col space-y-2 mt-2 bg-blue-600 shadow-md py-4 px-6 text-white font-bold animate-slide-down'>
           {menuItems.map((item) => (
             <li key={item.label}>
               <a
