@@ -24,18 +24,18 @@ export default function NavBar() {
     <nav className='bg-blue-600 shadow-md'>
       <div className='container mx-auto px-4 flex items-center justify-between py-4'>
         {/* Logo */}
-        <div className='flex items-center flex-shrink-0'>
+        <div className='flex items-center flex-shrink-0 ml-[-150px]'>
           <Image
             src='/logo.svg'
             alt='Marketplace Logo'
-            width={200}
-            height={100}
+            width={400}
+            height={200}
             className='w-auto h-12 sm:h-16 lg:h-20 max-w-xs object-contain'
           />
         </div>
 
         {/* Desktop Search */}
-        <div className='hidden lg:block flex-grow max-w-md px-4'>
+        <div className='hidden lg:block flex-grow max-w-md px-4 ml-[-400]'>
           <Search />
         </div>
 
