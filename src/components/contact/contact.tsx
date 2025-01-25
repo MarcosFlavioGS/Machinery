@@ -34,7 +34,7 @@ export default function Contact() {
               rows={4}
             />
           </div>
-          <Button className='w-full bg-blue-600 text-white py-3'>Enviar mensagem</Button>
+          <Button className='w-full bg-sky-600 text-white py-3'>Enviar mensagem</Button>
         </form>
       </div>
     </section>

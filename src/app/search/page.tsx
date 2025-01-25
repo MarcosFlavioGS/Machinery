@@ -3,7 +3,8 @@
 import ListingOptionsSheet from '@/components/listingSheet/listingOptionSheet'
 import NavBar from '@/components/navBar/navBar'
 import Footer from '@/components/footer/footer'
-import { Card, CardContent, CardHeader } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardFooter } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 
 type Product = {
   title: string
@@ -24,11 +25,14 @@ const ProductCard = (product: Product) => (
         alt={product.title}
         className='w-full h-40 object-cover rounded-lg'
       />
-      <p className='text-lg font-semibold text-blue-600'>{product.price}</p>
+      <p className='text-lg font-semibold text-gray-800'>{product.price}</p>
       <p className=''></p>
-      <p className='text-lg font-semibold text-blue-600'>{'De: ' + product.vendor}</p>
-      <p className='text-lg font-semibold text-blue-600'>{product.local}</p>
+      <p className='text-lg font-semibold text-gray-800'>{'De: ' + product.vendor}</p>
+      <p className='text-lg font-semibold text-sky-800'>{product.local}</p>
     </CardContent>
+    <CardFooter className='p-6'>
+      <Button className='w-full bg-red-500 text-white hover:bg-red-400'>View Details</Button>
+    </CardFooter>
   </Card>
 )
 
@@ -106,7 +110,7 @@ export default function SearchPage() {
   ]
 
   return (
-    <div className='min-h-screen bg-zinc-300'>
+    <div className='min-h-screen bg-zinc-200'>
       <NavBar />
 
       {/* Listing Options */}

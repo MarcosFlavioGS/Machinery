@@ -8,7 +8,7 @@ export default function Cta() {
   return (
     <section
       id='cta'
-      className='bg-blue-600 text-white py-12 relative w-full h-screen overflow-hidden'>
+      className='bg-sky-600 text-white py-12 relative w-full h-screen overflow-hidden'>
       {/* Background Video */}
       <div className='absolute inset-0'>
         <AspectRatio
@@ -35,7 +35,7 @@ export default function Cta() {
         </p>
         <Button
           variant='default'
-          className='bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 text-lg rounded-lg'>
+          className='bg-sky-600 hover:bg-sky-700 text-white font-bold px-8 py-4 text-lg rounded-lg'>
           Começe já
         </Button>
       </div>

@@ -9,7 +9,7 @@ import Footer from '@/components/footer/footer'
 
 export default function LandingPage() {
   return (
-    <div className='min-h-screen bg-zinc-300'>
+    <div className='min-h-screen bg-blue-300'>
       {/* Navbar Section */}
       <NavBar />
 

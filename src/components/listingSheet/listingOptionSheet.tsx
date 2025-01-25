@@ -26,7 +26,7 @@ export default function ListingOptionsSheet() {
     <Sheet>
       <SheetTrigger asChild>
         <Button
-          className='bg-blue-700 text-white hover:bg-blue-800 fixed top-40 left-4'
+          className='bg-sky-700 text-white hover:bg-sky-800 hover:text-gray-200 fixed top-40 left-4'
           variant='outline'>
           Expandir
         </Button>
@@ -43,7 +43,7 @@ export default function ListingOptionsSheet() {
               <input
                 type='checkbox'
                 id={`category-${index}`}
-                className='form-checkbox h-5 w-5 text-blue-600'
+                className='form-checkbox h-5 w-5 text-sky-600'
               />
               <Label
                 htmlFor={`category-${index}`}
@@ -55,7 +55,9 @@ export default function ListingOptionsSheet() {
         </div>
         <SheetFooter className='flex justify-end'>
           <SheetClose asChild>
-            <Button className='bg-green-600 text-white hover:bg-green-700'>Salvar escolhas</Button>
+            <Button className='bg-sky-600 text-white hover:bg-sky-700 hove:text-gray-200'>
+              Salvar escolhas
+            </Button>
           </SheetClose>
         </SheetFooter>
       </SheetContent>

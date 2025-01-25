@@ -22,7 +22,7 @@ export default function NavBar() {
   }
 
   return (
-    <nav className='bg-blue-600 shadow-md'>
+    <nav className='bg-sky-800 shadow-md'>
       <div className='container mx-auto px-4 flex items-center justify-between py-4'>
         {/* Logo */}
         <div className='flex items-center flex-shrink-0 ml-[-110px]'>
@@ -106,7 +106,7 @@ export default function NavBar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <ul className='lg:hidden flex flex-col space-y-2 mt-2 bg-blue-600 shadow-md py-4 px-6 text-white font-bold animate-slide-down'>
+        <ul className='lg:hidden flex flex-col space-y-2 mt-2 bg-sky-600 shadow-md py-4 px-6 text-white font-bold animate-slide-down'>
           {menuItems.map((item) => (
             <li key={item.label}>
               <a

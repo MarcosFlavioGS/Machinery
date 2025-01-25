@@ -12,17 +12,17 @@ export default function Search() {
       <form
         action='/search'
         method='GET'
-        className='flex items-center bg-blue-500 rounded-lg overflow-hidden shadow-md'>
+        className='flex items-center bg-sky-1000 rounded-lg overflow-hidden shadow-md'>
         <Input
           type='text'
           name='query'
           placeholder='Pesquisar...'
-          className='flex-1 px-4 py-2 bg-white text-blue-1000 placeholder-white focus:outline-none focus:ring focus:ring-blue-300 focus:bg-white'
+          className='flex-1 px-4 py-2 bg-white text-sky-1000 placeholder-white focus:outline-none focus:ring focus:ring-sky-300 focus:bg-white'
         />
         <Button
           type='submit'
           disabled={loading}
-          className={`px-4 py-2 bg-blue-700 text-white font-bold hover:bg-blue-800 transition-all ${
+          className={`px-4 py-2 bg-sky-600 text-white font-bold hover:bg-sky-900 transition-all ${
             loading ? 'opacity-75 cursor-not-allowed' : ''
           }`}>
           {loading ? (

@@ -76,7 +76,7 @@ export default function Featured(props: Props) {
   return (
     <section
       id='featured'
-      className='py-16 bg-zinc-300'>
+      className='py-16 bg-zinc-200'>
       <div className='container mx-auto px-4 '>
         <h2 className='text-4xl font-extrabold text-center mb-12 text-gray-800'>{props.listName}</h2>
         <Carousel
@@ -99,19 +99,19 @@ export default function Featured(props: Props) {
                   </CardHeader>
                   <CardContent className='p-6'>
                     <CardTitle className='text-xl font-bold text-gray-800'>{item.title}</CardTitle>
-                    <p className='text-lg font-semibold text-blue-600'>{item.price}</p>
-                    <p className='text-lg font-semibold text-blue-600'>{'De: ' + item.vendor}</p>
-                    <p className='text-lg font-semibold text-blue-600'>{item.local}</p>
+                    <p className='text-lg font-semibold text-gray-800'>{item.price}</p>
+                    <p className='text-lg font-semibold text-gray-800'>{'De: ' + item.vendor}</p>
+                    <p className='text-lg font-semibold text-sky-800'>{item.local}</p>
                   </CardContent>
                   <CardFooter className='p-6'>
-                    <Button className='w-full bg-blue-600 text-white hover:bg-blue-700'>View Details</Button>
+                    <Button className='w-full bg-red-500 text-white hover:bg-red-400'>View Details</Button>
                   </CardFooter>
                 </Card>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className='absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-3 rounded-full z-10 shadow-md hover:bg-blue-700 transition' />
-          <CarouselNext className='absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-3 rounded-full z-10 shadow-md hover:bg-blue-700 transition' />
+          <CarouselPrevious className='absolute left-0 top-1/2 transform -translate-y-1/2 bg-sky-800 text-white p-3 rounded-full z-10 shadow-md hover:bg-sky-800 transition' />
+          <CarouselNext className='absolute right-0 top-1/2 transform -translate-y-1/2 bg-sky-800 text-white p-3 rounded-full z-10 shadow-md hover:bg-sky-600 transition' />
         </Carousel>
       </div>
     </section>
