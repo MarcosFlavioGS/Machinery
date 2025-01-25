@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import Search from '@/components/search/search'
 
@@ -25,13 +26,15 @@ export default function NavBar() {
       <div className='container mx-auto px-4 flex items-center justify-between py-4'>
         {/* Logo */}
         <div className='flex items-center flex-shrink-0 ml-[-130px]'>
-          <Image
-            src='/logo.svg'
-            alt='Marketplace Logo'
-            width={400}
-            height={200}
-            className='w-auto h-12 sm:h-16 lg:h-20 max-w-xs object-contain'
-          />
+          <Link href='/'>
+            <Image
+              src='/logo.svg'
+              alt='Marketplace Logo'
+              width={400}
+              height={200}
+              className='w-auto h-12 sm:h-16 lg:h-20 max-w-xs object-contain'
+            />
+          </Link>
         </div>
 
         {/* Desktop Search */}

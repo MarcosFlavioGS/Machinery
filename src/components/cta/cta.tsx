@@ -36,7 +36,7 @@ export default function Cta() {
         <Button
           variant='default'
           className='bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 text-lg rounded-lg'>
-          Explore Agora
+          Começe já
         </Button>
       </div>
     </section>
