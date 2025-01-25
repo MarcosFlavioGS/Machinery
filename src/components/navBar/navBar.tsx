@@ -28,8 +28,8 @@ export default function NavBar() {
           <Image
             src='/logo.svg'
             alt='Marketplace Logo'
-            width={400}
-            height={200}
+            width={200}
+            height={100}
             className='w-auto h-12 sm:h-16 lg:h-20 max-w-xs object-contain'
           />
         </div>
