@@ -26,7 +26,7 @@ export default function ListingOptionsSheet() {
     <Sheet>
       <SheetTrigger asChild>
         <Button
-          className='bg-blue-700 text-white hover:bg-blue-800'
+          className='bg-blue-700 text-white hover:bg-blue-800 fixed top-40 left-4'
           variant='outline'>
           Expandir
         </Button>

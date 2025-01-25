@@ -37,7 +37,7 @@ const ProductList = ({ products }: { products: Product[] }) => {
     <div className='flex flex-wrap justify-center gap-4 px-4 py-6'>
       {products.map((product, index) => (
         <ProductCard
-          key={`${product.title}-${index}`} // Combine title and index for uniqueness
+          key={`${product.title}-${index}`}
           {...product}
         />
       ))}
