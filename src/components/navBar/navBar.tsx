@@ -24,7 +24,7 @@ export default function NavBar() {
     <nav className='bg-blue-600 shadow-md'>
       <div className='container mx-auto px-4 flex items-center justify-between py-4'>
         {/* Logo */}
-        <div className='flex items-center flex-shrink-0 ml-[-150]'>
+        <div className='flex items-center flex-shrink-0 ml-[-150px]'>
           <Image
             src='/logo.svg'
             alt='Marketplace Logo'
@@ -35,7 +35,7 @@ export default function NavBar() {
         </div>
 
         {/* Desktop Search */}
-        <div className='hidden lg:block flex-grow max-w-md px-4 ml-[-500]'>
+        <div className='hidden lg:block flex-grow max-w-md px-4'>
           <Search />
         </div>
 
