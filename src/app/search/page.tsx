@@ -3,7 +3,7 @@
 import ListingOptionsSheet from '@/components/listingSheet/listingOptionSheet'
 import NavBar from '@/components/navBar/navBar'
 import Footer from '@/components/footer/footer'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader } from '@/components/ui/card'
 
 type Product = {
   title: string
