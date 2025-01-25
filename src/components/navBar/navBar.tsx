@@ -32,7 +32,7 @@ export default function NavBar() {
               alt='Marketplace Logo'
               width={100}
               height={100}
-              className='w-auto h-8 sm:h-12 lg:h-16 max-w-xs object-contain'
+              className='w-auto h-8 sm:h-9 lg:h-16 max-w-xs object-contain'
             />
           </Link>
         </div>
