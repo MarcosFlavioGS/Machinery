@@ -11,10 +11,10 @@ export default function NavBar() {
   const [searchOpen, setSearchOpen] = useState(false)
 
   const menuItems = [
-    { label: 'Home', href: '#hero' },
-    { label: 'Destaques', href: '#featured' },
-    { label: 'Começe Já', href: '#cta' },
-    { label: 'Contato', href: '#footer' }
+    { label: 'Home', href: '/#hero' },
+    { label: 'Destaques', href: '/#featured' },
+    { label: 'Começe Já', href: '/#cta' },
+    { label: 'Contato', href: '/#footer' }
   ]
 
   const toggleState = (stateSetter: React.Dispatch<React.SetStateAction<boolean>>) => {
