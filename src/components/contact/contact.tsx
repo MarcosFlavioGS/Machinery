@@ -14,7 +14,7 @@ export default function Contact() {
             <label className='block text-gray-700 font-bold mb-2'>Nome</label>
             <input
               type='text'
-              placeholder='Your Name'
+              placeholder='Seu Nome'
               className='w-full border border-gray-300 rounded px-4 py-2 text-sm sm:text-base'
             />
           </div>
@@ -22,14 +22,14 @@ export default function Contact() {
             <label className='block text-gray-700 font-bold mb-2'>Email</label>
             <input
               type='email'
-              placeholder='Your Email'
+              placeholder='Seu Email'
               className='w-full border border-gray-300 rounded px-4 py-2 text-sm sm:text-base'
             />
           </div>
           <div>
             <label className='block text-gray-700 font-bold mb-2'>Mensagem</label>
             <textarea
-              placeholder='Your Message'
+              placeholder='Sua Mensagem'
               className='w-full border border-gray-300 rounded px-4 py-2 text-sm sm:text-base'
               rows={4}
             />
