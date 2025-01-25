@@ -6,6 +6,8 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import Search from '@/components/search/search'
 
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
@@ -53,6 +55,17 @@ export default function NavBar() {
               </a>
             </li>
           ))}
+          {/* Avatar */}
+          <div>
+            <Avatar>
+              <AvatarImage
+                src='/avatar.svg'
+                alt='Avatar'
+              />
+              <AvatarFallback />
+              CN
+            </Avatar>
+          </div>
         </ul>
 
         {/* Mobile Controls */}
@@ -107,6 +120,17 @@ export default function NavBar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <ul className='lg:hidden flex flex-col space-y-2 mt-2 bg-sky-600 shadow-md py-4 px-6 text-white font-bold animate-slide-down'>
+          {/* Avatar */}
+          <div>
+            <Avatar>
+              <AvatarImage
+                src='/avatar.svg'
+                alt='Avatar'
+              />
+              <AvatarFallback />
+              CN
+            </Avatar>
+          </div>
           {menuItems.map((item) => (
             <li key={item.label}>
               <a
