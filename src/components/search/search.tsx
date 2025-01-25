@@ -16,7 +16,7 @@ export default function Search() {
         <Input
           type='text'
           name='query'
-          placeholder='Search...'
+          placeholder='Pesquisar...'
           className='flex-1 px-4 py-2 bg-white text-blue-1000 placeholder-white focus:outline-none focus:ring focus:ring-blue-300 focus:bg-white'
         />
         <Button
@@ -44,7 +44,7 @@ export default function Search() {
                 d='M4 12a8 8 0 018-8v4a4 4 0 100 8v4a8 8 0 01-8-8z'></path>
             </svg>
           ) : (
-            'Search'
+            'Pesquisa'
           )}
         </Button>
       </form>

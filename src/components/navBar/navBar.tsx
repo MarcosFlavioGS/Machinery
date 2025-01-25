@@ -11,9 +11,9 @@ export default function NavBar() {
 
   const menuItems = [
     { label: 'Home', href: '#hero' },
-    { label: 'Listings', href: '#featured' },
-    { label: 'Get Started', href: '#cta' },
-    { label: 'Contact', href: '#footer' }
+    { label: 'Destaques', href: '#featured' },
+    { label: 'Começe Já', href: '#cta' },
+    { label: 'Contato', href: '#footer' }
   ]
 
   const toggleState = (stateSetter: React.Dispatch<React.SetStateAction<boolean>>) => {

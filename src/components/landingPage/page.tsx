@@ -9,7 +9,7 @@ import Footer from '@/components/footer/footer'
 
 export default function LandingPage() {
   return (
-    <div className='min-h-screen bg-gray-400'>
+    <div className='min-h-screen bg-zinc-300'>
       {/* Navbar Section */}
       <NavBar />
 
@@ -17,11 +17,11 @@ export default function LandingPage() {
       <Hero />
 
       {/* Featured Listings Section */}
-      <Featured listName='Most searched' />
+      <Featured listName='Destaques' />
 
-      <Featured listName='Trending' />
+      <Featured listName='Mais procurados' />
 
-      <Featured listName='Picks for you' />
+      <Featured listName='Recomendados para você' />
 
       {/* CTA Section */}
       <Cta />

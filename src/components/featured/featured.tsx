@@ -76,7 +76,7 @@ export default function Featured(props: Props) {
   return (
     <section
       id='featured'
-      className='py-16 bg-gray-50'>
+      className='py-16 bg-zinc-300'>
       <div className='container mx-auto px-4 '>
         <h2 className='text-4xl font-extrabold text-center mb-12 text-gray-800'>{props.listName}</h2>
         <Carousel
@@ -87,7 +87,7 @@ export default function Featured(props: Props) {
               <CarouselItem
                 key={idx}
                 className='basis-full sm:basis-1/2 lg:basis-1/3 px-2'>
-                <Card className='shadow-lg rounded-lg hover:scale-105 transition-transform duration-200'>
+                <Card className='shadow-lg bg-zinc-300 rounded-lg hover:scale-105 transition-transform duration-200'>
                   <CardHeader className='p-0'>
                     <Image
                       src={item.image}

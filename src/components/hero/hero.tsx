@@ -27,16 +27,14 @@ export default function Hero() {
 
       {/* Content */}
       <div className='relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4'>
-        <h1 className='text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight mb-6'>
-          Heavy Machinery Marketplace
-        </h1>
+        <h1 className='text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight mb-6'>Maquina Market</h1>
         <p className='text-lg sm:text-xl md:text-2xl max-w-2xl mb-8'>
-          The ultimate platform to buy, sell, and lease industrial equipment.
+          A plataforma perfeita para comprar, vender e alugar equipamento industrial.
         </p>
         <Button
           variant='default'
           className='bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 text-lg rounded-lg'>
-          Explore Now
+          Explore Agora
         </Button>
       </div>
     </section>
