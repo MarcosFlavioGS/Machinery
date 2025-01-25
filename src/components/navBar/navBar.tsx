@@ -22,7 +22,7 @@ export default function NavBar() {
   }
 
   return (
-    <nav className='bg-sky-800 shadow-md'>
+    <nav className='bg-sky-700 shadow-md'>
       <div className='container mx-auto px-4 flex items-center justify-between py-4'>
         {/* Logo */}
         <div className='flex items-center flex-shrink-0 ml-[-110px]'>
