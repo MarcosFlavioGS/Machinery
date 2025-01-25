@@ -1,7 +1,5 @@
 'use client'
 
-import { Separator } from '@/components/ui/separator'
-
 import NavBar from '@/components/navBar/navBar'
 import Hero from '@/components/hero/hero'
 import Featured from '@/components/featured/featured'
@@ -11,11 +9,9 @@ import Footer from '@/components/footer/footer'
 
 export default function LandingPage() {
   return (
-    <div className='min-h-screen bg-gray-100'>
+    <div className='min-h-screen bg-gray-400'>
       {/* Navbar Section */}
       <NavBar />
-
-      <Separator />
 
       {/* Hero Section */}
       <Hero />

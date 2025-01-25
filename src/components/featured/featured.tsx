@@ -29,7 +29,7 @@ export default function Featured(props: Props) {
     <section
       id='featured'
       className='py-16 bg-gray-50'>
-      <div className='container mx-auto px-4'>
+      <div className='container mx-auto px-4 '>
         <h2 className='text-4xl font-extrabold text-center mb-12 text-gray-800'>{props.listName}</h2>
         <Carousel
           opts={{ align: 'start' }}

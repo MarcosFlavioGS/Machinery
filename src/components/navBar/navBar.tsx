@@ -11,7 +11,7 @@ export default function NavBar() {
 
   const menuItems = [
     { label: 'Home', href: '#hero' },
-    { label: 'Featured Listings', href: '#featured' },
+    { label: 'Listings', href: '#featured' },
     { label: 'Get Started', href: '#cta' },
     { label: 'Contact', href: '#footer' }
   ]
@@ -21,31 +21,31 @@ export default function NavBar() {
   }
 
   return (
-    <nav className='bg-white shadow-md'>
+    <nav className='bg-blue-600 shadow-md'>
       <div className='container mx-auto px-4 flex items-center justify-between py-4'>
         {/* Logo */}
-        <div className='flex items-center'>
+        <div className='flex items-center flex-shrink-0'>
           <Image
             src='/logo.svg'
             alt='Marketplace Logo'
-            width={112}
-            height={28}
-            className='object-contain w-28'
+            width={400}
+            height={200}
+            className='object-contain'
           />
         </div>
 
         {/* Desktop Search */}
-        <div className='hidden sm:block w-full max-w-md'>
+        <div className='hidden lg:block flex-grow max-w-md px-4'>
           <Search />
         </div>
 
         {/* Desktop Menu */}
-        <ul className='hidden sm:flex items-center space-x-4 text-gray-800 font-medium'>
+        <ul className='hidden lg:flex items-center space-x-6 text-white font-bold'>
           {menuItems.map((item) => (
             <li key={item.label}>
               <a
                 href={item.href}
-                className='hover:text-blue-600 transition-colors'>
+                className='hover:text-gray-300 transition-colors'>
                 {item.label}
               </a>
             </li>
@@ -53,7 +53,7 @@ export default function NavBar() {
         </ul>
 
         {/* Mobile Controls */}
-        <div className='flex items-center space-x-4 sm:hidden'>
+        <div className='flex items-center space-x-4 lg:hidden'>
           <Button
             variant='ghost'
             onClick={() => toggleState(setSearchOpen)}
@@ -64,7 +64,7 @@ export default function NavBar() {
               viewBox='0 0 24 24'
               strokeWidth={2}
               stroke='currentColor'
-              className='w-6 h-6'>
+              className='w-6 h-6 text-white'>
               <path
                 strokeLinecap='round'
                 strokeLinejoin='round'
@@ -82,7 +82,7 @@ export default function NavBar() {
               viewBox='0 0 24 24'
               strokeWidth={2}
               stroke='currentColor'
-              className='w-6 h-6'>
+              className='w-6 h-6 text-white'>
               {menuOpen ? (
                 <path
                   strokeLinecap='round'
@@ -103,13 +103,13 @@ export default function NavBar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <ul className='sm:hidden flex flex-col space-y-2 mt-2 bg-white shadow-md py-4 px-6 text-gray-800 font-medium'>
+        <ul className='lg:hidden flex flex-col space-y-2 mt-2 bg-blue-600 shadow-md py-4 px-6 text-white font-bold'>
           {menuItems.map((item) => (
             <li key={item.label}>
               <a
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
-                className='hover:text-blue-600 transition-colors'>
+                className='hover:text-gray-300 transition-colors'>
                 {item.label}
               </a>
             </li>
@@ -119,7 +119,7 @@ export default function NavBar() {
 
       {/* Mobile Search */}
       {searchOpen && (
-        <div className='sm:hidden mt-2 px-4'>
+        <div className='lg:hidden mt-2 px-4'>
           <Search />
         </div>
       )}

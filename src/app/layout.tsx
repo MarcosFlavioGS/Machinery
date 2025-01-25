@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Machinery',
-  description: 'A test for your favorite marketplace'
+  title: 'Maquina Market',
+  description: 'Seu Market place'
 }
 
 export default function RootLayout({
