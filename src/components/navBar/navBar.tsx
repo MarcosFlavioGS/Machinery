@@ -25,13 +25,13 @@ export default function NavBar() {
     <nav className='bg-blue-600 shadow-md'>
       <div className='container mx-auto px-4 flex items-center justify-between py-4'>
         {/* Logo */}
-        <div className='flex items-center flex-shrink-0 ml-[100px]'>
+        <div className='flex items-center flex-shrink-0 ml-[-130px]'>
           <Link href='/'>
             <Image
               src='/logo.svg'
               alt='Marketplace Logo'
-              width={400}
-              height={200}
+              width={100}
+              height={100}
               className='w-auto h-8 sm:h-12 lg:h-16 max-w-xs object-contain'
             />
           </Link>
