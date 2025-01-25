@@ -20,56 +20,64 @@ export default function Featured(props: Props) {
       price: 'R$25,000',
       image: '/MARAIS SMC 200 R.png',
       vendor: 'Cleiton',
-      local: '📍 São Paulo, SP'
+      local: '📍 São Paulo, SP',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec mauris.'
     },
     {
       title: 'Bulldozer XT200',
       price: 'R$35,000',
       image: '/bulldozer.png',
       vendor: 'Mohamed',
-      local: '📍 São Paulo, SP'
+      local: '📍 São Paulo, SP',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     },
     {
       title: 'Komatsu PC210-LC',
       price: 'R$50,000',
       image: '/Komatsu PC210-LC.png',
       vendor: 'Brunno',
-      local: '📍 São Paulo, SP'
+      local: '📍 São Paulo, SP',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus, sit amet sodales.'
     },
     {
       title: 'Loader Pro XL',
       price: 'R$40,000',
       image: '/bulldozer.png',
       vendor: 'Matheus',
-      local: '📍 São Paulo, SP'
+      local: '📍 São Paulo, SP',
+      description: 'Lorem ipsum dolor , adipiscing elit. Nunc quis, feugiat mattis nunc.'
     },
     {
       title: 'DrillMaster 500',
       price: 'R$60,000',
       image: '/bulldozer.png',
       vendor: 'Luiz',
-      local: '📍 São Paulo, SP'
+      local: '📍 São Paulo, SP',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit molestie .'
     },
     {
       title: 'Loader Pro XL',
       price: 'R$40,000',
       image: '/bulldozer.png',
       vendor: 'Marcos',
-      local: '📍 São Paulo, SP'
+      local: '📍 São Paulo, SP',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis ornare leo.'
     },
     {
       title: 'DrillMaster 500',
       price: 'R$40,000',
       image: '/bulldozer.png',
       vendor: 'Celso',
-      local: '📍 São Paulo, SP'
+      local: '📍 São Paulo, SP',
+      description: 'Lorem ipsum dolor sit amet, elit. Donec lobortis venenatis interdum.'
     },
     {
       title: 'Komatsu PC210-LC',
       price: 'R$40,000',
       image: '/MARAIS SMC 200 R.png',
       vendor: 'Carlos',
-      local: '📍 São Paulo, SP'
+      local: '📍 São Paulo, SP',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     }
   ]
 
@@ -99,10 +107,12 @@ export default function Featured(props: Props) {
                   </CardHeader>
                   <CardContent className='p-6'>
                     <CardTitle className='text-xl font-bold text-gray-800'>{item.title}</CardTitle>
+                    <br></br>
                     <p className='text-lg font-semibold text-gray-800'>{item.price}</p>
+                    <br></br>
+                    <p className='text-lg font-semibold text-gray-800'>{item.description}</p>
+                    <br></br>
                     <p className='text-lg font-semibold text-gray-800'>{'De: ' + item.vendor}</p>
-                    <br></br>
-                    <br></br>
                     <p className='text-lg font-semibold text-sky-800'>{item.local}</p>
                   </CardContent>
                   <CardFooter className='p-6'>
