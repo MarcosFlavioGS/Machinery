@@ -29,7 +29,7 @@ export default function Hero() {
       <div className='relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4'>
         <h1 className='text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight mb-6'>Máquina Market</h1>
         <p className='text-lg sm:text-xl md:text-2xl max-w-2xl mb-8'>
-          A plataforma perfeita para comprar, vender e alugar equipamento industrial.
+          A plataforma perfeita para comprar, vender e alugar equipamentos industriais.
         </p>
         <Button
           variant='default'

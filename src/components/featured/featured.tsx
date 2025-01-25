@@ -78,7 +78,7 @@ export default function Featured(props: Props) {
       id='featured'
       className='py-16 bg-zinc-200'>
       <div className='container mx-auto px-4 '>
-        <h2 className='text-4xl font-extrabold text-center mb-12 text-gray-800'>{props.listName}</h2>
+        <h2 className='text-4xl font-extrabold mb-12 text-gray-800'>{props.listName}</h2>
         <Carousel
           opts={{ align: 'start' }}
           className='w-full'>
@@ -101,6 +101,8 @@ export default function Featured(props: Props) {
                     <CardTitle className='text-xl font-bold text-gray-800'>{item.title}</CardTitle>
                     <p className='text-lg font-semibold text-gray-800'>{item.price}</p>
                     <p className='text-lg font-semibold text-gray-800'>{'De: ' + item.vendor}</p>
+                    <br></br>
+                    <br></br>
                     <p className='text-lg font-semibold text-sky-800'>{item.local}</p>
                   </CardContent>
                   <CardFooter className='p-6'>

@@ -31,7 +31,7 @@ export default function Cta() {
           Pronto para anunciar seu equipamento ?
         </h1>
         <p className='text-lg sm:text-xl md:text-2xl max-w-2xl mb-8'>
-          Junte-se aos milhares profissionais comprando e vendendo na nossa plataforma !
+          Junte-se aos milhares de profissionais comprando e vendendo na nossa plataforma !
         </p>
         <Button
           variant='default'
