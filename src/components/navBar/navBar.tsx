@@ -24,7 +24,7 @@ export default function NavBar() {
     <nav className='bg-blue-600 shadow-md'>
       <div className='container mx-auto px-4 flex items-center justify-between py-4'>
         {/* Logo */}
-        <div className='flex items-center flex-shrink-0 ml-[-130]'>
+        <div className='flex items-center flex-shrink-0 ml-[-150]'>
           <Image
             src='/logo.svg'
             alt='Marketplace Logo'
