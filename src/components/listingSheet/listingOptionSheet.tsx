@@ -26,9 +26,9 @@ export default function ListingOptionsSheet() {
     <Sheet>
       <SheetTrigger asChild>
         <Button
-          className='bg-sky-700 text-white hover:bg-sky-800 hover:text-gray-200 fixed top-40 left-4'
+          className='bg-sky-700 text-white hover:bg-sky-800 hover:text-gray-200 fixed top-[300] left-1'
           variant='outline'>
-          Expandir
+          ⇄
         </Button>
       </SheetTrigger>
       <SheetContent side='left'>
