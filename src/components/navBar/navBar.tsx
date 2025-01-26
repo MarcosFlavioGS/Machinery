@@ -73,7 +73,8 @@ export default function NavBar() {
           <Button
             variant='ghost'
             onClick={() => toggleState(setSearchOpen)}
-            aria-label='Toggle search'>
+            aria-label='Toggle search'
+            className='hover:bg-sky-800'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='none'
@@ -91,7 +92,8 @@ export default function NavBar() {
           <Button
             variant='ghost'
             onClick={() => toggleState(setMenuOpen)}
-            aria-label='Toggle menu'>
+            aria-label='Toggle menu'
+            className='hover:bg-sky-800'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='none'
