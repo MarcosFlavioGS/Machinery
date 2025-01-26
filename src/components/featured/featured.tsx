@@ -9,7 +9,7 @@ import {
   CarouselPrevious
 } from '@/components/ui/carousel'
 
-import { products } from '@/app/products/productList'
+import { products } from '@/app/products/productList' // Product List for better readability
 
 type Props = {
   listName: string
