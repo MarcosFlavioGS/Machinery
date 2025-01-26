@@ -6,6 +6,7 @@ import Featured from '@/components/featured/featured'
 import Cta from '@/components/cta/cta'
 import Contact from '@/components/contact/contact'
 import Footer from '@/components/footer/footer'
+import Categories from '@/components/categories/categories'
 
 export default function LandingPage() {
   return (
@@ -15,6 +16,9 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <Hero />
+
+      {/* Categories section */}
+      <Categories />
 
       {/* Featured Listings Section */}
       <Featured listName='Destaques' />
