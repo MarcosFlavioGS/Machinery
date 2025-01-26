@@ -5,6 +5,7 @@ import NavBar from '@/components/navBar/navBar'
 import Footer from '@/components/footer/footer'
 import { Card, CardContent, CardHeader, CardFooter } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import ListingHeader from '@/components/listingHeader/listingheader'
 
 type Product = {
   title: string
@@ -26,7 +27,7 @@ const ProductCard = (product: Product) => (
         alt={product.title}
         className='w-full h-40 object-cover rounded-lg'
       />
-      <p className='text-lg font-semibold text-gray-800'>{product.price}</p>
+      <p className='text-lg font-semibold text-gray-800'>{'R$' + product.price}</p>
       <br></br>
       <p className='text-lg font-semibold text-gray-800'>{product.description}</p>
       <br></br>
@@ -34,7 +35,7 @@ const ProductCard = (product: Product) => (
       <p className='text-lg font-semibold text-sky-800'>{product.local}</p>
     </CardContent>
     <CardFooter className='p-6'>
-      <Button className='w-full bg-red-500 text-white hover:bg-red-400'>View Details</Button>
+      <Button className='w-full bg-red-500 text-white hover:bg-red-400'>Detalhes</Button>
     </CardFooter>
   </Card>
 )
@@ -56,7 +57,7 @@ export default function SearchPage() {
   const products: Product[] = [
     {
       title: 'MARAIS SMC 200 R',
-      price: 'R$25,000',
+      price: '25.000',
       image: '/MARAIS SMC 200 R.png',
       vendor: 'Cleiton',
       local: '📍 São Paulo, SP',
@@ -64,7 +65,7 @@ export default function SearchPage() {
     },
     {
       title: 'Bulldozer XT200',
-      price: 'R$35,000',
+      price: '35.000',
       image: '/bulldozer.png',
       vendor: 'Mohamed',
       local: '📍 São Paulo, SP',
@@ -73,7 +74,7 @@ export default function SearchPage() {
     },
     {
       title: 'Komatsu PC210-LC',
-      price: 'R$50,000',
+      price: '50.000',
       image: '/Komatsu PC210-LC.png',
       vendor: 'Brunno',
       local: '📍 São Paulo, SP',
@@ -81,7 +82,7 @@ export default function SearchPage() {
     },
     {
       title: 'Loader Pro XL',
-      price: 'R$40,000',
+      price: '40.000',
       image: '/bulldozer.png',
       vendor: 'Matheus',
       local: '📍 São Paulo, SP',
@@ -90,7 +91,7 @@ export default function SearchPage() {
     },
     {
       title: 'DrillMaster 500',
-      price: 'R$60,000',
+      price: '60.000',
       image: '/bulldozer.png',
       vendor: 'Luiz',
       local: '📍 São Paulo, SP',
@@ -98,7 +99,7 @@ export default function SearchPage() {
     },
     {
       title: 'Loader Pro XL',
-      price: 'R$40,000',
+      price: '40.000',
       image: '/bulldozer.png',
       vendor: 'Marcos',
       local: '📍 São Paulo, SP',
@@ -106,7 +107,7 @@ export default function SearchPage() {
     },
     {
       title: 'DrillMaster 500',
-      price: 'R$40,000',
+      price: '40.000',
       image: '/bulldozer.png',
       vendor: 'Celso',
       local: '📍 São Paulo, SP',
@@ -115,7 +116,7 @@ export default function SearchPage() {
     },
     {
       title: 'Komatsu PC210-LC',
-      price: 'R$40,000',
+      price: '40.000',
       image: '/MARAIS SMC 200 R.png',
       vendor: 'Carlos',
       local: '📍 São Paulo, SP',
@@ -129,6 +130,12 @@ export default function SearchPage() {
 
       {/* Listing Options */}
       <ListingOptionsSheet />
+
+      {/* Listing header */}
+      <ListingHeader
+        totalResults={products.length}
+        location='São Paulo, SP'
+      />
 
       {/* Product List */}
       <ProductList products={products} />

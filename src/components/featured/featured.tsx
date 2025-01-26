@@ -17,7 +17,7 @@ export default function Featured(props: Props) {
   const items = [
     {
       title: 'MARAIS SMC 200 R',
-      price: 'R$25,000',
+      price: '25.000',
       image: '/MARAIS SMC 200 R.png',
       vendor: 'Cleiton',
       local: '📍 São Paulo, SP',
@@ -25,7 +25,7 @@ export default function Featured(props: Props) {
     },
     {
       title: 'Bulldozer XT200',
-      price: 'R$35,000',
+      price: '35.000',
       image: '/bulldozer.png',
       vendor: 'Mohamed',
       local: '📍 São Paulo, SP',
@@ -33,7 +33,7 @@ export default function Featured(props: Props) {
     },
     {
       title: 'Komatsu PC210-LC',
-      price: 'R$50,000',
+      price: '50.000',
       image: '/Komatsu PC210-LC.png',
       vendor: 'Brunno',
       local: '📍 São Paulo, SP',
@@ -41,7 +41,7 @@ export default function Featured(props: Props) {
     },
     {
       title: 'Loader Pro XL',
-      price: 'R$40,000',
+      price: '40.000',
       image: '/bulldozer.png',
       vendor: 'Matheus',
       local: '📍 São Paulo, SP',
@@ -49,7 +49,7 @@ export default function Featured(props: Props) {
     },
     {
       title: 'DrillMaster 500',
-      price: 'R$60,000',
+      price: '60.000',
       image: '/bulldozer.png',
       vendor: 'Luiz',
       local: '📍 São Paulo, SP',
@@ -57,7 +57,7 @@ export default function Featured(props: Props) {
     },
     {
       title: 'Loader Pro XL',
-      price: 'R$40,000',
+      price: '40.000',
       image: '/bulldozer.png',
       vendor: 'Marcos',
       local: '📍 São Paulo, SP',
@@ -65,7 +65,7 @@ export default function Featured(props: Props) {
     },
     {
       title: 'DrillMaster 500',
-      price: 'R$40,000',
+      price: '40.000',
       image: '/bulldozer.png',
       vendor: 'Celso',
       local: '📍 São Paulo, SP',
@@ -73,7 +73,7 @@ export default function Featured(props: Props) {
     },
     {
       title: 'Komatsu PC210-LC',
-      price: 'R$40,000',
+      price: '40.000',
       image: '/MARAIS SMC 200 R.png',
       vendor: 'Carlos',
       local: '📍 São Paulo, SP',
@@ -108,7 +108,7 @@ export default function Featured(props: Props) {
                   <CardContent className='p-6'>
                     <CardTitle className='text-xl font-bold text-gray-800'>{item.title}</CardTitle>
                     <br></br>
-                    <p className='text-lg font-semibold text-gray-800'>{item.price}</p>
+                    <p className='text-lg font-semibold text-gray-800'>{'R$' + item.price}</p>
                     <br></br>
                     <p className='text-lg font-semibold text-gray-800'>{item.description}</p>
                     <br></br>
@@ -116,7 +116,7 @@ export default function Featured(props: Props) {
                     <p className='text-lg font-semibold text-sky-800'>{item.local}</p>
                   </CardContent>
                   <CardFooter className='p-6'>
-                    <Button className='w-full bg-red-500 text-white hover:bg-red-400'>View Details</Button>
+                    <Button className='w-full bg-red-500 text-white hover:bg-red-400'>Detalhes</Button>
                   </CardFooter>
                 </Card>
               </CarouselItem>
