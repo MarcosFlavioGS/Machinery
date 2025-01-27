@@ -9,7 +9,7 @@ import {
   CarouselPrevious
 } from '@/components/ui/carousel'
 
-import { products } from '@/app/products/productList' // Product List for better readability
+import { products } from '@/products/productList' // Product List for better readability
 import { FunctionComponent } from 'react'
 
 type Props = {
@@ -36,8 +36,8 @@ const Featured: FunctionComponent<Props> = (props: Props) => {
                     <Image
                       src={item.image}
                       alt={item.title}
-                      width={360}
-                      height={240}
+                      width={500}
+                      height={500}
                       className='rounded-t-lg object-cover w-full h-[240px]'
                     />
                   </CardHeader>

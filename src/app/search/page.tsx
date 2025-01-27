@@ -6,8 +6,9 @@ import Footer from '@/components/footer/footer'
 import { Card, CardContent, CardHeader, CardFooter } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import ListingHeader from '@/components/listingHeader/listingheader'
+import Image from 'next/image'
 
-import { products, Product } from '@/app/products/productList'
+import { products, Product } from '@/products/productList'
 import { FunctionComponent } from 'react'
 
 const ProductCard = (product: Product) => (
@@ -16,9 +17,11 @@ const ProductCard = (product: Product) => (
       <h3 className='text-lg font-bold truncate'>{product.title}</h3>
     </CardHeader>
     <CardContent>
-      <img
+      <Image
         src={product.image}
         alt={product.title}
+        width={500}
+        height={500}
         className='w-full h-40 object-cover rounded-lg'
       />
       <p className='text-lg font-semibold text-gray-800'>{'R$' + product.price}</p>
