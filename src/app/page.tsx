@@ -1,9 +1,12 @@
 import LandingPage from '@/components/landingPage/page'
+import { FunctionComponent } from 'react'
 
-export default function page() {
+const page: FunctionComponent = () => {
   return (
     <>
       <LandingPage />
     </>
   )
 }
+
+export default page

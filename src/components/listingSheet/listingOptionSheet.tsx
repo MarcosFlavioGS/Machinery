@@ -11,8 +11,9 @@ import {
   SheetClose
 } from '@/components/ui/sheet'
 import { Label } from '@/components/ui/label'
+import { FunctionComponent } from 'react'
 
-export default function ListingOptionsSheet() {
+const ListingOptionsSheet: FunctionComponent = () => {
   const categories = [
     'Categoria 1',
     'Categoria 2',
@@ -64,3 +65,5 @@ export default function ListingOptionsSheet() {
     </Sheet>
   )
 }
+
+export default ListingOptionsSheet

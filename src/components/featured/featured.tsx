@@ -10,12 +10,13 @@ import {
 } from '@/components/ui/carousel'
 
 import { products } from '@/app/products/productList' // Product List for better readability
+import { FunctionComponent } from 'react'
 
 type Props = {
   listName: string
 }
 
-export default function Featured(props: Props) {
+const Featured: FunctionComponent<Props> = (props: Props) => {
   return (
     <section
       id='featured'
@@ -64,3 +65,5 @@ export default function Featured(props: Props) {
     </section>
   )
 }
+
+export default Featured

@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button'
 import ListingHeader from '@/components/listingHeader/listingheader'
 
 import { products, Product } from '@/app/products/productList'
+import { FunctionComponent } from 'react'
 
 const ProductCard = (product: Product) => (
   <Card className='w-full md:w-1/3 lg:w-1/4 p-2'>
@@ -33,7 +34,11 @@ const ProductCard = (product: Product) => (
   </Card>
 )
 
-const ProductList = ({ products }: { products: Product[] }) => {
+type Props = {
+  products: Product[]
+}
+
+const ProductList: FunctionComponent<Props> = ({ products }: { products: Product[] }) => {
   return (
     <div className='flex flex-wrap justify-center gap-4 px-4 py-6'>
       {products.map((product, index) => (
@@ -46,7 +51,7 @@ const ProductList = ({ products }: { products: Product[] }) => {
   )
 }
 
-export default function SearchPage() {
+const SearchPage: FunctionComponent = () => {
   return (
     <div className='min-h-screen bg-zinc-200'>
       <NavBar />
@@ -68,3 +73,5 @@ export default function SearchPage() {
     </div>
   )
 }
+
+export default SearchPage

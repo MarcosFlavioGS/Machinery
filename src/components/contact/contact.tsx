@@ -1,8 +1,9 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
+import { FunctionComponent } from 'react'
 
-export default function Contact() {
+const Contact: FunctionComponent = () => {
   return (
     <section
       id='contact'
@@ -40,3 +41,5 @@ export default function Contact() {
     </section>
   )
 }
+
+export default Contact

@@ -7,8 +7,9 @@ import Cta from '@/components/cta/cta'
 import Contact from '@/components/contact/contact'
 import Footer from '@/components/footer/footer'
 import Categories from '@/components/categories/categories'
+import { FunctionComponent } from 'react'
 
-export default function LandingPage() {
+const LandingPage: FunctionComponent = () => {
   return (
     <div className='min-h-screen bg-red-500'>
       {/* Navbar Section */}
@@ -38,3 +39,5 @@ export default function LandingPage() {
     </div>
   )
 }
+
+export default LandingPage

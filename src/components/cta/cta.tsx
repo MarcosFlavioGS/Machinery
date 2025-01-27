@@ -3,8 +3,9 @@
 import { Button } from '@/components/ui/button'
 import { AspectRatio } from '@/components/ui/aspect-ratio'
 import Image from 'next/image'
+import { FunctionComponent } from 'react'
 
-export default function Cta() {
+const Cta: FunctionComponent = () => {
   return (
     <section
       id='cta'
@@ -42,3 +43,5 @@ export default function Cta() {
     </section>
   )
 }
+
+export default Cta

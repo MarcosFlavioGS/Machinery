@@ -1,7 +1,7 @@
 'use client'
 
 import { Card, CardContent } from '@/components/ui/card'
-import { useState } from 'react'
+import { FunctionComponent, useState } from 'react'
 
 const categories = [
   { id: 1, name: 'Escavadeiras', icon: '🚜' },
@@ -12,7 +12,7 @@ const categories = [
   { id: 6, name: 'Retroescavadeiras', icon: '🔧' }
 ]
 
-export default function Categories() {
+const Categories: FunctionComponent = () => {
   const [selectedCategory, setSelectedCategory] = useState<number | null>(null)
 
   return (
@@ -35,3 +35,5 @@ export default function Categories() {
     </div>
   )
 }
+
+export default Categories

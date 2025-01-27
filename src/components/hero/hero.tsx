@@ -2,8 +2,9 @@
 
 import { Button } from '@/components/ui/button'
 import { AspectRatio } from '@/components/ui/aspect-ratio'
+import { FunctionComponent } from 'react'
 
-export default function Hero() {
+const Hero: FunctionComponent = () => {
   return (
     <section
       id='hero'
@@ -40,3 +41,5 @@ export default function Hero() {
     </section>
   )
 }
+
+export default Hero

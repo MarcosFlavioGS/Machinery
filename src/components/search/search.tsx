@@ -2,9 +2,9 @@
 
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { useState } from 'react'
+import { FunctionComponent, useState } from 'react'
 
-export default function Search() {
+const Search: FunctionComponent = () => {
   const [loading] = useState(false)
 
   return (
@@ -51,3 +51,5 @@ export default function Search() {
     </div>
   )
 }
+
+export default Search

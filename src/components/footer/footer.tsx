@@ -1,6 +1,8 @@
 'use client'
 
-export default function Footer() {
+import { FunctionComponent } from 'react'
+
+const Footer: FunctionComponent = () => {
   return (
     <footer
       id='footer'
@@ -13,3 +15,5 @@ export default function Footer() {
     </footer>
   )
 }
+
+export default Footer

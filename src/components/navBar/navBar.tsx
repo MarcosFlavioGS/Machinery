@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { FunctionComponent, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
@@ -8,7 +8,7 @@ import Search from '@/components/search/search'
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
-export default function NavBar() {
+const NavBar: FunctionComponent = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
 
@@ -155,3 +155,5 @@ export default function NavBar() {
     </nav>
   )
 }
+
+export default NavBar
